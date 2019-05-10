@@ -5,8 +5,210 @@
     <title>HTML Academy: Барбершоп</title>
   </head>
   <body>
+    <header>
+      <nav class="main-navigation">
+        <img src="http://placehold.it/371x155" class="main-logo" width="371" height="155" alt="Логотип барбершопа Бородинский">
+        <ul class="main-navigation__list">
+          <li class="main-navigation__item">
+            <a href="#info" class="main-navigation__link">
+              Информация
+            </a>
+          </li>
+          <li class="main-navigation__item">
+            <a href="#news" class="main-navigation__link">
+              Новости
+            </a>
+          </li>
+          <li class="main-navigation__item">
+            <a href="price.html" class="main-navigation__link">
+              Прайс-лист
+            </a>
+          </li>
+          <li class="main-navigation__item">
+            <a href="store.html" class="main-navigation__link">
+              Магазин
+            </a>
+          </li>
+          <li class="main-navigation__item">
+            <a href="#contacts" class="main-navigation__link">
+              Контакты
+            </a>
+          </li>
+        </ul>
+      </nav>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+      <nav class="user-navigation">
+        <ul class="user-navigation__list">
+          <li class="user-navigation__item">
+            <a href="#" class="login-link">
+              Вход
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1 class="visually-hidden">
+        Барбершоп «Бородинский»
+      </h1>
+
+      <section class="advantages">
+        <h2 class="visually-hidden">
+          Преимущества
+        </h2>
+        <ul class="advantages__list">
+          <li class="advantages__item">
+            <h3 class="advantages__header">
+              Быстро
+            </h3>
+            <p class="advantages__description">
+                Мы делаем свою работу быстро! Два часа пролетят незаметно и вы - счастливый обладатель стильной стрижки-минутки!
+            </p>
+          </li>
+          <li class="advantages__item">
+            <h3 class="advantages__header">
+              Круто
+            </h3>
+            <p class="advantages__description">
+                Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино! Во всяком случае внешне.
+            </p>
+          </li>
+          <li class="advantages__item">
+            <h3 class="advantages__header">
+              Дорого
+            </h3>
+            <p class="advantages__description">
+                Наши мастера - профессионалы своего дела и не могут стоить дешево. К тому же, разве цена не дает определенный статус?
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="news">
+        <h2 class="section-header">
+          Новости
+        </h2>
+        <ul class="news__list">
+          <li class="news__item">
+            <p class="news__content">
+              Нам наконец завезли Ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки
+            </p>
+            <time datetime="2016-01-11">
+              11 января
+            </time>
+          </li>
+          <li class="news__item">
+            <p class="news__content">
+              В нашей команде пополнение, Борис «Бритва» Стригунец, обладатель множества титулов и наград пополнил наши стройные ряды
+            </p>
+            <time datetime="2016-01-18">
+              18 января
+            </time>
+          </li>
+        </ul>
+        <a href="news.html" class="button">
+          Все новости
+        </a>
+      </section>
+
+      <section class="gallery">
+        <h2 class="section-header">
+          Фотогалерея
+        </h2>
+        <figure class="gallery__content">
+          <a href="#">
+            <img src="http://placehold.it/286x164" width="286" height="164" alt="Интерьер барбершопа">
+          </a>
+        </figure>
+        <span class="button  gallery__button">Назад</span>
+        <span class="button  gallery__button">Вперёд</span>
+      </section>
+
+      <section class="contacts">
+        <h2 class="section-header">
+          Контактная информация
+        </h2>
+        <p>
+          Барбершоп «Бородинский»<br>
+          Адрес: г. Санкт-Петербург, ул. Б.Конюшенная, д. 19/8<br>
+          Телефон: +7 (495) 666-02-66
+        </p>
+        <p>
+          Время работать:<br>
+          Пн-Пт: c 10:00 до 22:00<br>
+          Сб-Вс: с 10:00 до 19:00
+        </p>
+        <a href="map.html" class="button">
+          Как проехать?
+        </a>
+        <a href="contacts.html" class="button">
+          Обратная связь
+        </a>
+      </section>
+
+      <section class="appointment">
+        <h2 class="section-header">
+          Записаться
+        </h2>
+        <p class="appointment__info">
+          Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони
+        </p>
+        <!--Место зарезеривровано под форму-->
+      </section>
+    </main>
+    <footer class="main-footer">
+      <p class="main-footer__contacts">
+          Барбершоп «Бородинский»<br>
+          Адрес: г. Санкт-Петербург, ул. Б.Конюшенная, д. 19/8<br>
+          Как нас найти?<br>
+          Телефон: +7 (495) 666-02-66
+      </p>
+      <div class="social-links">
+        <b>Давайте дружить!</b>
+        <ul class="social-links__list">
+          <li class="social-links__item">
+            <a href="https://vk.com/" class="social-links__link">
+            Вконтакте
+            </a>
+          </li>
+          <li class="social-links__item">
+            <a href="https://facebook.com/" class="social-links__link">
+            Facebook
+            </a>
+          </li>
+          <li class="social-links__item">
+            <a href="https://instagram.com/" class="social-links__link">
+            Instagram
+            </a>
+          </li>
+        </ul>
+      </div>
+      <p class="copyright">
+        <b>Разработано:</b>
+        <a href="https://htmlacademy.ru/" class="button">
+          HTML Academy
+        </a>
+      </p>
+    </footer>
+
+    <!--Модальные окна / Попапы-->
+
+    <section class="modal modal--login">
+      <h2 class="section-header">Личный кабинет</h2>
+      <p>
+        Введите свой логин и пароль
+      </p>
+      <!--Место зарезервировано под форму-->
+      <span class="modal-close">x</span>
+    </section>
+
+    <section class="moda modal--map">
+      <h2 class="visually-hidden">
+        Как до нас добраться?
+      </h2>
+      <span class="modal-close">x</span>
+    </section>
 
   </body>
 </html>
