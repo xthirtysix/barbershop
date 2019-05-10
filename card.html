@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Барбершоп</title>
+  </head>
+  <body>
+    <header>
+      <nav class="main-navigation">
+        <a href="index.html" class="inner-logo">
+          <img src="http://placehold.it/371x155" class="inner-logo__image" width="111" height="24" alt="Логотип барбершопа Бородинский">
+        </a>
+        <ul class="main-navigation__list">
+          <li class="main-navigation__link">
+            <a href="#info">
+              Информация
+            </a>
+          </li>
+          <li class="main-navigation__link">
+            <a href="#news">
+              Новости
+            </a>
+          </li>
+          <li class="main-navigation__link">
+            <a href="price.html">
+              Прайс-лист
+            </a>
+          </li>
+          <li class="main-navigation__link main-navigation__link--current">
+            <a href="#">
+              Магазин
+            </a>
+          </li>
+          <li class="main-navigation__link">
+            <a href="#contacts">
+              Контакты
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <nav class="user-navigation">
+        <ul class="user-navigation__list">
+          <li class="user-navigation__link">
+            <a href="#">
+              Вход
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1 class="page-title">
+        Набор для путешествий «Baxter of California»
+      </h1>
+
+      <ul class="breadcrumbs">
+        <li class="breadcrumbs__link">
+          <a href="index.html">
+            Главная
+          </a>
+        </li>
+        <li class="breadcrumbs__link">
+          <a href="#">
+            Магазин
+          </a>
+        </li>
+        <li class="breadcrumbs__link">
+          <a href="store.html">
+            Средства для ухода
+          </a>
+        </li>
+        <li class="breadcrumbs__link breadcrumbs__link--current">
+          Набор для путешествий «Baxter of California»
+        </li>
+      </ul>
+
+      <section class="product-pictures">
+        <h2 class="visually-hidden">
+          Изображения товара
+        </h2>
+        <p>
+          <img src="https://placehold.it/460x498" width="460" height="498" alt="Фото всего набора»">
+        </p>
+        <ul class="product-pictures__list">
+          <li class="product-pictures__link">
+            <img src="https://placehold.it/140x149" width="140" height="149"  alt="Превью в анфас">
+          </li>
+          <li class="product-pictures__link">
+            <img src="https://placehold.it/140x149" width="140" height="149"  alt="Превью упаковки">
+          </li>
+          <li class="product-pictures__link">
+            <img src="https://placehold.it/140x149" width="140" height="149"  alt="Превью всего набора">
+          </li>
+        </ul>
+      </section>
+
+      <section class="product-info">
+        <h2 class="visually-hidden">
+          Описание товара
+        </h2>
+        <p class="product-info__availability">
+          Есть в наличии
+        </p>
+        <p class="product-info__article">
+          Артикул: dexter-ae
+        </p>
+        <p class="product-info__description">
+          Travel Kit – необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.
+        </p>
+        <p class="product-info__price">
+          <b>2 900 ₽</b>
+          <a href="#" class="button">
+            Купить
+          </a>
+        </p>
+        <h3>
+          В набор входят:
+        </h3>
+        <ul>
+          <li>Средство для умывания (50 мл)</li>
+          <li>Увлажняющий крем (50 мл)</li>
+          <li>Крем для бритья (50 мл)</li>
+          <li>Крем после бритья, шампунь (50 мл)</li>
+          <li>Удобная кожаная косметичка</li>
+        </ul>
+      </section>
+
+    </main>
+
+    <footer class="main-footer">
+      <p class="main-footer__contacts">
+        Барбершоп «Бородинский»<br>
+        Адрес: г. Санкт-Петербург, ул. Б.Конюшенная, д. 19/8<br>
+        Как нас найти?<br>
+        Телефон: +7 (495) 666-02-66
+      </p>
+      <div class="social-links">
+        <b>Давайте дружить!</b>
+        <ul class="social-links__list">
+          <li class="social-links__link">
+            <a href="https://vk.com/">
+            Вконтакте
+            </a>
+          </li>
+          <li class="social-links__link">
+            <a href="https://facebook.com/">
+            Facebook
+            </a>
+          </li>
+          <li class="social-links__link">
+            <a href="https://instagram.com/">
+            Instagram
+            </a>
+          </li>
+        </ul>
+      </div>
+      <p class="copyright">
+        <b>Разработано:</b>
+        <a href="https://htmlacademy.ru/" class="button">
+          HTML Academy
+        </a>
+      </p>
+    </footer>
+    <!--Модальные окна / Попапы-->
+
+    <section class="modal modal--login">
+      <h2 class="section-header">Личный кабинет</h2>
+      <p>
+        Введите свой логин и пароль
+      </p>
+      <!--Место зарезервировано под форму-->
+      <span class="modal-close">x</span>
+    </section>
+
+    <section class="modal modal--map">
+      <h2 class="visually-hidden">
+        Как до нас добраться?
+      </h2>
+      <span class="modal-close">x</span>
+    </section>
+
+  </body>
+</html>
