@@ -1,6 +1,6 @@
 # Учебный проект «Барбершоп»
 
-* Студент: [Алексей Б.](https://up.htmlacademy.ru/htmlcss/25/user/892681).
+* Студент: [Алексей Бездетко](https://up.htmlacademy.ru/htmlcss/25/user/892681).
 
 ---
 
