@@ -81,17 +81,25 @@
           Изображения товара
         </h2>
         <p>
-          <img src="img/product-1_big.jpg" width="460" height="498" alt="Фото всего набора»">
+          <a href="#">
+            <img src="img/product-1_big.jpg" width="460" height="498" alt="Фото всего набора»">
+          </a>
         </p>
         <ul class="product-pictures__list">
           <li class="product-pictures__link">
-            <img src="img/product-1_small-1.jpg" width="140" height="149"  alt="Превью в анфас">
+            <a href="#">
+              <img src="img/product-1_small-1.jpg" width="140" height="149"  alt="Превью в анфас">
+            </a>
           </li>
           <li class="product-pictures__link">
-            <img src="img/product-1_small-2.jpg" width="140" height="149"  alt="Превью упаковки">
+            <a href="#">
+              <img src="img/product-1_small-2.jpg" width="140" height="149"  alt="Превью упаковки">
+            </a>
           </li>
           <li class="product-pictures__link">
-            <img src="img/product-1_small-3.jpg" width="140" height="149"  alt="Превью всего набора">
+            <a href="#">
+              <img src="img/product-1_small-3.jpg" width="140" height="149"  alt="Превью всего набора">
+            </a>
           </li>
         </ul>
       </section>
@@ -163,24 +171,47 @@
         </a>
       </p>
     </footer>
+
     <!--Модальные окна / Попапы-->
 
     <section class="modal modal--login">
-      <h2 class="section-header">Личный кабинет</h2>
-      <p>
-        Введите свой логин и пароль
-      </p>
-      <!--Место зарезервировано под форму-->
-      <span class="modal-close">x</span>
-    </section>
+        <h2 class="section-header">Личный кабинет</h2>
+        <p>
+          Введите свой логин и пароль
+        </p>
+        <form class="input-form" action="https://echo.htmlacademy.ru/" method="POST">
+          <p>
+            <label class="visually-hidden" for="input-login">Логин</label>
+            <input type="text" name="input-login" id="input-login" placeholder="Логин">
+          </p>
+          <p>
+            <label class="visually-hidden" for="input-password">Пароль</label>
+            <input type="text" name="input-password" id="input-password" placeholder="Пароль">
+          </p>
+          <p class="login-options">
+            <label>
+              <input type="checkbox" name="remember-me" id="remember-me">Запомните меня
+            </label>
+            <a href="#" class="restore">Я забыл пароль</a>
+          </p>
+          <button class="button input-form__button" type="submit">Войти</button>
+        </form>
+        <button class="modal-close" type="button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+      </section>
 
-    <section class="modal modal--map">
-      <h2 class="visually-hidden">
-        Как до нас добраться?
-      </h2>
-      <img src="img/map.png" width="766" height="560" alt="Адрес: г. Санкт-Петербург, ул. Б.Конюшенная, д. 19/8">
-      <span class="modal-close">x</span>
-    </section>
+      <section class="modal modal--map">
+        <h2 class="visually-hidden">
+          Как до нас добраться?
+        </h2>
+        <p>
+          <img src="img/map.png" width="766" height="560" alt="Офис компании по адресу: г. Санкт-Петербург, ул. Б.Конюшенная, д. 19/8">
+        </p>
+        <button class="modal-close" type="button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+      </section>
 
-  </body>
-</html>
+    </body>
+  </html>
