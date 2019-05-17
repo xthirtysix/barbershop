@@ -121,8 +121,8 @@
             <img src="img/interrior.jpg" width="286" height="164" alt="Интерьер барбершопа">
           </a>
         </figure>
-        <span class="button  gallery__button">Назад</span>
-        <span class="button  gallery__button">Вперёд</span>
+        <button class="button gallery__button gallery__button--back" type="button">Назад</button>
+        <button class="button gallery__button gallery__button--next" type="button">Вперёд</button>
       </section>
 
       <section class="contacts">
@@ -154,33 +154,51 @@
         <p class="appointment__info">
           Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони
         </p>
-        <!--Место зарезеривровано под форму-->
+        <form class="appointment__form" method="POST" action="https://echo.htmlacademy.ru/">
+          <p>
+            <label for="input-date">Дата</label>
+            <input type="text" name="date" id="input-date" placeholder="08.10.2017">
+          </p>
+          <p>
+            <label for="input-time">Время</label>
+            <input type="text" name="time" id="input-time" placeholder="10:00">
+          </p>
+          <p>
+            <label for="input-name">Ваше имя</label>
+            <input type="text" name="username" id="input-name" placeholder="Борода">
+          </p>
+          <p>
+            <label for="input-phone">Телефон</label>
+            <input type="tel" name="phone" id="input-phone" placeholder="+7 123 456-78-90">
+          </p>
+          <button class="button" type="submit">Отправить</button>
+        </form>
       </section>
     </main>
 
     <footer class="main-footer">
       <p class="main-footer__contacts">
-          Барбершоп «Бородинский»<br>
-          Адрес: г. Санкт-Петербург, ул. Б.Конюшенная, д. 19/8<br>
-          Как нас найти?<br>
-          Телефон: +7 (495) 666-02-66
+        Барбершоп «Бородинский»<br>
+        Адрес: г. Санкт-Петербург, ул. Б.Конюшенная, д. 19/8<br>
+        Как нас найти?<br>
+        Телефон: +7 (495) 666-02-66
       </p>
       <div class="social-links">
         <b>Давайте дружить!</b>
         <ul class="social-links__list">
           <li class="social-links__link">
             <a href="https://vk.com/">
-            Вконтакте
+              <span class="visually-hidden">Вконтакте</span>
             </a>
           </li>
           <li class="social-links__link">
             <a href="https://facebook.com/">
-            Facebook
+              <span class="visually-hidden">Фейсбук</span>
             </a>
           </li>
           <li class="social-links__link">
             <a href="https://instagram.com/">
-            Instagram
+              <span class="visually-hidden">Инстаграм</span>
             </a>
           </li>
         </ul>
@@ -200,16 +218,38 @@
       <p>
         Введите свой логин и пароль
       </p>
-      <!--Место зарезервировано под форму-->
-      <span class="modal-close">x</span>
+      <form class="input-form" action="https://echo.htmlacademy.ru/" method="POST">
+        <p>
+          <label class="visually-hidden" for="input-login">Логин</label>
+          <input type="text" name="input-login" id="input-login" placeholder="Логин">
+        </p>
+        <p>
+          <label class="visually-hidden" for="input-password">Пароль</label>
+          <input type="text" name="input-password" id="input-password" placeholder="Пароль">
+        </p>
+        <p class="login-options">
+          <label>
+            <input type="checkbox" name="remember-me" id="remember-me">Запомните меня
+          </label>
+          <a href="#" class="restore">Я забыл пароль</a>
+        </p>
+        <button class="button input-form__button" type="submit">Войти</button>
+      </form>
+      <button class="modal-close" type="button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
     </section>
 
     <section class="modal modal--map">
       <h2 class="visually-hidden">
         Как до нас добраться?
       </h2>
-      <img src="img/map.png" width="766" height="560" alt="Адрес: г. Санкт-Петербург, ул. Б.Конюшенная, д. 19/8">
-      <span class="modal-close">x</span>
+      <p>
+        <img src="img/map.png" width="766" height="560" alt="Офис компании по адресу: г. Санкт-Петербург, ул. Б.Конюшенная, д. 19/8">
+      </p>
+      <button class="modal-close" type="button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
     </section>
 
   </body>
