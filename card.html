@@ -3,44 +3,45 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Барбершоп</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&display=swap&subset=latin,cyrillic" rel="stylesheet">
   </head>
-  <body>
+  <body class="inner-page">
     <header>
       <nav class="main-navigation">
         <a href="index.html" class="inner-logo">
           <img src="img/logo.svg" class="inner-logo__image" width="111" height="24" alt="Логотип барбершопа Бородинский">
         </a>
-        <ul class="main-navigation__list">
-          <li class="main-navigation__link">
+        <ul class="site-navigation">
+          <li class="site-navigation__link">
             <a href="#info">
               Информация
             </a>
           </li>
-          <li class="main-navigation__link">
+          <li class="site-navigation__link">
             <a href="#news">
               Новости
             </a>
           </li>
-          <li class="main-navigation__link">
+          <li class="site-navigation__link">
             <a href="price.html">
               Прайс-лист
             </a>
           </li>
-          <li class="main-navigation__link main-navigation__link--current">
+          <li class="site-navigation__link main-navigation__link--current">
             <a href="#">
               Магазин
             </a>
           </li>
-          <li class="main-navigation__link">
+          <li class="site-navigation__link">
             <a href="#contacts">
               Контакты
             </a>
           </li>
         </ul>
-      </nav>
 
-      <nav class="user-navigation">
-        <ul class="user-navigation__list">
+        <ul class="user-navigation">
           <li class="user-navigation__link">
             <a href="#">
               Вход
@@ -80,10 +81,8 @@
         <h2 class="visually-hidden">
           Изображения товара
         </h2>
-        <p>
-          <a href="#">
-            <img src="img/product-1_big.jpg" width="460" height="498" alt="Фото всего набора»">
-          </a>
+        <p class="product-pictureres__big-picture">
+          <img src="img/product-1_big.jpg" width="460" height="498" alt="Фото всего набора»">
         </p>
         <ul class="product-pictures__list">
           <li class="product-pictures__link">
@@ -123,10 +122,10 @@
             Купить
           </a>
         </p>
-        <h3>
+        <h3 class="product-info__content-header">
           В набор входят:
         </h3>
-        <ul>
+        <ul class="product-info__list">
           <li>Средство для умывания (50 мл)</li>
           <li>Увлажняющий крем (50 мл)</li>
           <li>Крем для бритья (50 мл)</li>
@@ -179,7 +178,7 @@
         <p>
           Введите свой логин и пароль
         </p>
-        <form class="input-form" action="https://echo.htmlacademy.ru/" method="POST">
+        <form class="login-form" action="https://echo.htmlacademy.ru/" method="POST">
           <p>
             <label class="visually-hidden" for="input-login">Логин</label>
             <input type="text" name="input-login" id="input-login" placeholder="Логин">

@@ -3,44 +3,45 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Барбершоп</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&display=swap&subset=latin,cyrillic" rel="stylesheet">
   </head>
-  <body>
+  <body class="inner-page">
     <header>
       <nav class="main-navigation">
         <a href="index.html" class="inner-logo">
           <img src="img/logo.svg" class="inner-logo__image" width="111" height="24" alt="Логотип барбершопа Бородинский">
         </a>
-        <ul class="main-navigation__list">
-          <li class="main-navigation__link">
+        <ul class="site-navigation">
+          <li class="site-navigation__link">
             <a href="#info">
               Информация
             </a>
           </li>
-          <li class="main-navigation__link">
+          <li class="site-navigation__link">
             <a href="#news">
               Новости
             </a>
           </li>
-          <li class="main-navigation__link">
+          <li class="site-navigation__link">
             <a href="price.html">
               Прайс-лист
             </a>
           </li>
-          <li class="main-navigation__link main-navigation__link--current">
+          <li class="site-navigation__link main-navigation__link--current">
             <a href="#">
               Магазин
             </a>
           </li>
-          <li class="main-navigation__link">
+          <li class="site-navigation__link">
             <a href="#contacts">
               Контакты
             </a>
           </li>
         </ul>
-      </nav>
 
-      <nav class="user-navigation">
-        <ul class="user-navigation__list">
+        <ul class="user-navigation">
           <li class="user-navigation__link">
             <a href="#">
               Вход
@@ -95,7 +96,7 @@
                 <label for="malingoetz">Malin+Goetz</label>
               </li>
               <li>
-                <input type="checkbox" name="murrays" id="murrays">
+                <input type="checkbox" name="murrays" id="murrays" disabled>
                 <label for="murrays">Murray’s</label>
               </li>
               <li>
@@ -112,7 +113,7 @@
                   <label for="shaving">Бритвенные принадлежности</label>
                 </li>
                 <li>
-                  <input type="radio" name="goods-group" id="care">
+                  <input type="radio" name="goods-group" id="care" checked>
                   <label for="care">Средства для ухода</label>
                 </li>
                 <li>
@@ -321,7 +322,7 @@
         <p>
           Введите свой логин и пароль
         </p>
-        <form class="input-form" action="https://echo.htmlacademy.ru/" method="POST">
+        <form class="login-form" action="https://echo.htmlacademy.ru/" method="POST">
           <p>
             <label class="visually-hidden" for="input-login">Логин</label>
             <input type="text" name="input-login" id="input-login" placeholder="Логин">
