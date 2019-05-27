@@ -8,8 +8,8 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&display=swap&subset=latin,cyrillic" rel="stylesheet">
   </head>
   <body class="inner-page">
-    <header>
-      <nav class="main-navigation">
+    <header class="main-header">
+      <nav class="main-navigation container">
         <a href="index.html" class="inner-logo">
           <img src="img/logo.svg" class="inner-logo__image" width="111" height="24" alt="Логотип барбершопа Бородинский">
         </a>
@@ -29,7 +29,7 @@
               Прайс-лист
             </a>
           </li>
-          <li class="site-navigation__link main-navigation__link--current">
+          <li class="site-navigation__link site-navigation__link--current">
             <a href="#">
               Магазин
             </a>
@@ -51,7 +51,7 @@
       </nav>
     </header>
 
-    <main>
+    <main class="container">
       <h1 class="page-title">
         Набор для путешествий «Baxter of California»
       </h1>
@@ -77,98 +77,102 @@
         </li>
       </ul>
 
-      <section class="product-pictures">
-        <h2 class="visually-hidden">
-          Изображения товара
-        </h2>
-        <p class="product-pictureres__big-picture">
-          <img src="img/product-1_big.jpg" width="460" height="498" alt="Фото всего набора»">
-        </p>
-        <ul class="product-pictures__list">
-          <li class="product-pictures__link">
-            <a href="#">
-              <img src="img/product-1_small-1.jpg" width="140" height="149"  alt="Превью в анфас">
-            </a>
-          </li>
-          <li class="product-pictures__link">
-            <a href="#">
-              <img src="img/product-1_small-2.jpg" width="140" height="149"  alt="Превью упаковки">
-            </a>
-          </li>
-          <li class="product-pictures__link">
-            <a href="#">
-              <img src="img/product-1_small-3.jpg" width="140" height="149"  alt="Превью всего набора">
-            </a>
-          </li>
-        </ul>
-      </section>
+      <div class="catalogue-columns">
+        <section class="product-pictures">
+          <h2 class="visually-hidden">
+            Изображения товара
+          </h2>
+          <p class="product-pictures__big-picture">
+            <img src="img/product-1_big.jpg" width="460" height="498" alt="Фото всего набора»">
+          </p>
+          <ul class="product-pictures__list">
+            <li class="product-pictures__link">
+              <a href="#">
+                <img src="img/product-1_small-1.jpg" width="140" height="149"  alt="Превью в анфас">
+              </a>
+            </li>
+            <li class="product-pictures__link">
+              <a href="#">
+                <img src="img/product-1_small-2.jpg" width="140" height="149"  alt="Превью упаковки">
+              </a>
+            </li>
+            <li class="product-pictures__link">
+              <a href="#">
+                <img src="img/product-1_small-3.jpg" width="140" height="149"  alt="Превью всего набора">
+              </a>
+            </li>
+          </ul>
+        </section>
 
-      <section class="product-info">
-        <h2 class="visually-hidden">
-          Описание товара
-        </h2>
-        <p class="product-info__availability">
-          Есть в наличии
-        </p>
-        <p class="product-info__article">
-          Артикул: dexter-ae
-        </p>
-        <p class="product-info__description">
-          Travel Kit – необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.
-        </p>
-        <p class="product-info__price">
-          <b>2 900 ₽</b>
-          <a href="#" class="button">
-            Купить
-          </a>
-        </p>
-        <h3 class="product-info__content-header">
-          В набор входят:
-        </h3>
-        <ul class="product-info__list">
-          <li>Средство для умывания (50 мл)</li>
-          <li>Увлажняющий крем (50 мл)</li>
-          <li>Крем для бритья (50 мл)</li>
-          <li>Крем после бритья, шампунь (50 мл)</li>
-          <li>Удобная кожаная косметичка</li>
-        </ul>
-      </section>
+        <section class="product-info">
+          <h2 class="visually-hidden">
+            Описание товара
+          </h2>
+          <p class="product-info__availability">
+            Есть в наличии
+          </p>
+          <p class="product-info__article">
+            Артикул: dexter-ae
+          </p>
+          <p class="product-info__description">
+            Travel Kit – необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.
+          </p>
+          <p class="product-info__price">
+            <b>2 900 ₽</b>
+            <a href="#" class="button">
+              Купить
+            </a>
+          </p>
+          <h3 class="product-info__content-header">
+            В набор входят:
+          </h3>
+          <ul class="product-info__list">
+            <li>Средство для умывания (50 мл)</li>
+            <li>Увлажняющий крем (50 мл)</li>
+            <li>Крем для бритья (50 мл)</li>
+            <li>Крем после бритья, шампунь (50 мл)</li>
+            <li>Удобная кожаная косметичка</li>
+          </ul>
+        </section>
+      </div>
 
     </main>
 
     <footer class="main-footer">
-      <p class="main-footer__contacts">
-        Барбершоп «Бородинский»<br>
-        Адрес: г. Санкт-Петербург, ул. Б.Конюшенная, д. 19/8<br>
-        Как нас найти?<br>
-        Телефон: +7 (495) 666-02-66
-      </p>
-      <div class="social-links">
-        <b>Давайте дружить!</b>
-        <ul class="social-links__list">
-          <li class="social-links__link">
-            <a href="https://vk.com/">
-            Вконтакте
-            </a>
-          </li>
-          <li class="social-links__link">
-            <a href="https://facebook.com/">
-            Facebook
-            </a>
-          </li>
-          <li class="social-links__link">
-            <a href="https://instagram.com/">
-            Instagram
-            </a>
-          </li>
-        </ul>
+      <div class="container">
+        <p class="main-footer__contacts">
+          Барбершоп «Бородинский»<br>
+          Адрес: г. Санкт-Петербург, ул. Б.Конюшенная, д. 19/8<br>
+          <a href="map.html">Как нас найти?</a><br>
+          Телефон: +7 (495) 666-02-66
+        </p>
+        <div class="social-links">
+          <b>Давайте дружить!</b>
+          <ul class="social-links__list">
+            <li class="social-links__link">
+              <a href="https://vk.com/">
+                <span class="visually-hidden">Вконтакте</span>
+              </a>
+            </li>
+            <li class="social-links__link">
+              <a href="https://facebook.com/">
+                <span class="visually-hidden">Фейсбук</span>
+              </a>
+            </li>
+            <li class="social-links__link">
+              <a href="https://instagram.com/">
+                <span class="visually-hidden">Инстаграм</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <p class="copyright">
+          <b>Разработано:</b>
+          <a href="https://htmlacademy.ru/" class="button">
+            HTML Academy
+          </a>
+        </p>
       </div>
-      <p class="copyright">
-        <b>Разработано:</b>
-        <a href="https://htmlacademy.ru/" class="button">
-          HTML Academy
-        </a>
-      </p>
     </footer>
 
     <!--Модальные окна / Попапы-->
@@ -193,7 +197,7 @@
             </label>
             <a href="#" class="restore">Я забыл пароль</a>
           </p>
-          <button class="button input-form__button" type="submit">Войти</button>
+          <button class="button login-form__button" type="submit">Войти</button>
         </form>
         <button class="modal-close" type="button">
           <span class="visually-hidden">Закрыть</span>
